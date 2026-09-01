@@ -1,0 +1,25 @@
+{
+  "name": "clothing-store-backend",
+  "version": "1.0.0",
+  "description": "Backend for e-commerce clothing store with WhatsApp integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "init-db": "psql -U postgres -d clothing_store -f db/schema.sql"
+  },
+  "keywords": ["e-commerce", "clothing", "whatsapp", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "pg": "^8.10.0",
+    "dotenv": "^16.3.1",
+    "twilio": "^3.85.0",
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
